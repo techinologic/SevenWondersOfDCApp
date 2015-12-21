@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        GridView grid = (GridView) findViewById(R.id.gridView);
+        GridView grid = (GridView) findViewById(R.id.wondersGridView);
         final ImageView pic = (ImageView) findViewById(R.id.imgLarge);
 
         grid.setAdapter(new ImageAdapter(this));
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
-                        Toast.makeText(getBaseContext(), "UDC Jazz Archives", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getBaseContext(), "UDC Jazz Archives ", Toast.LENGTH_SHORT).show();
                         pic.setImageResource(Wonders[position]);
                         break;
                     case 1:

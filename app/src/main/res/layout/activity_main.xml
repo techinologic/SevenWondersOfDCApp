@@ -7,11 +7,16 @@
     <GridView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/gridView"
+        android:id="@+id/wondersGridView"
         android:numColumns="4"
         android:columnWidth="60dp"
+        android:stretchMode="columnWidth"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
         android:horizontalSpacing="3dp"
-        android:verticalSpacing="3dp"/>
+        android:verticalSpacing="3dp"
+        />
 
     <ImageView
         android:id="@+id/imgLarge"
